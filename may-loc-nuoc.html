@@ -1,0 +1,173 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Máy lọc nước — Coway Việt Nam</title>
+<meta name="description" content="Máy lọc nước RO chuẩn Hàn Quốc cho gia đình và văn phòng. Mua đứt, trả góp 0% hoặc thuê theo tháng — đã gồm thay lõi định kỳ.">
+<link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/list.css"></head>
+<body><header data-header data-active="water"></header>
+<main class="page">
+
+  <!-- Giới thiệu danh mục + thanh công cụ -->
+  <section class="lp-intro wrap" aria-labelledby="lpTitle">
+    <nav class="lp-crumb" aria-label="Đường dẫn">
+      <ol>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><img src="assets/list/ic-chevr-sm.svg" alt="" width="12" height="12"><a href="#" data-soon>Sản phẩm</a></li>
+        <li><img src="assets/list/ic-chevr-sm.svg" alt="" width="12" height="12"><span aria-current="page">Máy lọc nước</span></li>
+      </ol>
+    </nav>
+
+    <div class="lp-hero">
+      <img class="ring ring--1" src="assets/list/ring-1.svg" alt="" width="900" height="175">
+      <img class="ring ring--2" src="assets/list/ring-2.svg" alt="" width="640" height="136">
+      <div class="lp-hero__txt">
+        <span class="lp-chip-sm">5 dòng máy</span>
+        <h1 id="lpTitle">Máy lọc nước</h1>
+        <p>Lọc RO chuẩn Hàn Quốc cho gia đình và văn phòng. Mua đứt, trả góp 0% hoặc thuê theo tháng — đã gồm thay lõi định kỳ.</p>
+      </div>
+      <nav class="lp-cats" aria-label="Chuyển danh mục">
+        <a class="lp-cat is-active" href="may-loc-nuoc.html" aria-current="page">
+          <span class="ic"><img src="assets/list/ic-drop.svg" alt="" width="20" height="20"></span>
+          <span class="tx"><b>Máy lọc nước</b><small>5 sản phẩm</small></span>
+          <img class="chev" src="assets/list/ic-chevr-active.svg" alt="" width="18" height="18">
+        </a>
+        <a class="lp-cat" href="#" data-soon>
+          <span class="ic"><img src="assets/list/ic-wind.svg" alt="" width="20" height="20"></span>
+          <span class="tx"><b>Máy lọc không khí</b><small>5 sản phẩm</small></span>
+          <img class="chev" src="assets/list/ic-chevr.svg" alt="" width="18" height="18">
+        </a>
+        <a class="lp-cat" href="#" data-soon>
+          <span class="ic"><img src="assets/list/ic-filter.svg" alt="" width="20" height="20"></span>
+          <span class="tx"><b>Lõi lọc &amp; màng lọc</b><small>Thay thế chính hãng</small></span>
+          <img class="chev" src="assets/list/ic-chevr.svg" alt="" width="18" height="18">
+        </a>
+      </nav>
+    </div>
+
+    <div class="lp-toolbar">
+      <div class="lp-needs" role="group" aria-label="Lọc theo nhu cầu" id="needs">
+        <button type="button" class="lp-chip" data-need="all" aria-pressed="true">Tất cả</button>
+        <button type="button" class="lp-chip" data-need="ice" aria-pressed="false">Làm đá</button>
+        <button type="button" class="lp-chip" data-need="warm" aria-pressed="false">Nước ấm pha sữa</button>
+        <button type="button" class="lp-chip" data-need="big" aria-pressed="false">Dung tích lớn</button>
+        <button type="button" class="lp-chip" data-need="slim" aria-pressed="false">Siêu mỏng</button>
+        <button type="button" class="lp-chip" data-need="uv" aria-pressed="false">Khử trùng UV</button>
+      </div>
+      <div class="lp-tools">
+        <div class="lp-seg" role="radiogroup" aria-label="Giá hiển thị" id="priceMode">
+          <button type="button" role="radio" aria-checked="true" data-mode="buy">Mua đứt</button>
+          <button type="button" role="radio" aria-checked="false" data-mode="rent" tabindex="-1">Thuê theo tháng</button>
+        </div>
+        <div class="lp-sort" id="sort">
+          <button type="button" class="lp-sort__btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="sortList" id="sortBtn">
+            <span>Sắp xếp: <span id="sortLabel">Nổi bật</span></span>
+            <img src="assets/list/ic-sort-chev.svg" alt="" width="16" height="16">
+          </button>
+          <ul class="lp-sort__list" role="listbox" id="sortList" aria-labelledby="sortBtn" tabindex="-1" hidden>
+            <li role="option" data-sort="featured" aria-selected="true">Nổi bật</li>
+            <li role="option" data-sort="asc" aria-selected="false">Giá thấp đến cao</li>
+            <li role="option" data-sort="desc" aria-selected="false">Giá cao đến thấp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lưới sản phẩm -->
+  <section class="lp-list wrap" aria-label="Danh sách máy lọc nước">
+    <p class="lp-count" id="count" aria-live="polite">Hiển thị 5 sản phẩm</p>
+    <div class="lp-grid" id="grid"></div>
+
+    <template id="tileTpl">
+      <aside class="lp-tile" aria-label="Tư vấn chọn máy">
+        <div class="lp-tile__txt">
+          <p class="ov">CHƯA CHẮC CHỌN MÁY NÀO?</p>
+          <h2>So sánh chi tiết hoặc để chuyên viên tư vấn miễn phí</h2>
+          <p class="sub">Chúng tôi gợi ý máy theo số người dùng, nhu cầu nước nóng và diện tích lắp đặt.</p>
+        </div>
+        <div class="lp-tile__btns">
+          <a class="btn btn--light" href="#so-sanh-nhanh">So sánh 5 dòng máy <img src="assets/list/ic-arrow-18.svg" alt="" width="18" height="18"></a>
+          <a class="btn btn--outline-dark" href="tel:1800556892"><img src="assets/list/ic-phone-white.svg" alt="" width="18" height="18">Gọi 1800 556 892</a>
+        </div>
+      </aside>
+    </template>
+
+    <!-- Thanh so sánh — dính đáy màn hình khi có máy được chọn -->
+    <div class="lp-tray-wrap" id="trayWrap" hidden>
+      <div class="lp-tray" role="region" aria-label="Máy đã chọn để so sánh">
+        <ul class="lp-tray__items" id="trayItems"></ul>
+        <span class="lp-tray__sp" aria-hidden="true"></span>
+        <button type="button" class="lp-tray__clear" id="trayClear">Xoá tất cả</button>
+        <button type="button" class="btn btn--light" id="trayGo"><span>So sánh (<span id="trayN">0</span>)</span><img src="assets/list/ic-arrow-18.svg" alt="" width="18" height="18"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- So sánh nhanh -->
+  <section class="lp-cmp" id="so-sanh-nhanh" aria-labelledby="cmpTitle">
+    <div class="wrap">
+      <div class="lp-sec-head reveal">
+        <div>
+          <p class="lp-ov">SO SÁNH NHANH</p>
+          <h2 id="cmpTitle" class="lp-h2">Chọn máy theo thông số</h2>
+        </div>
+        <a class="lp-link" href="#" data-soon>Xem so sánh đầy đủ <img src="assets/list/ic-arrow-16.svg" alt="" width="16" height="16"></a>
+      </div>
+      <div class="lp-table-box reveal">
+        <div class="lp-table-scroll" id="quickTable"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cam kết dịch vụ -->
+  <section class="lp-services wrap" aria-label="Cam kết dịch vụ">
+    <ul class="lp-svc reveal">
+      <li><span class="ic"><img src="assets/list/ic-truck.svg" alt="" width="20" height="20"></span><div><b>Giao &amp; lắp đặt miễn phí</b><small>Trong khu vực phục vụ của Coway Vina</small></div></li>
+      <li><span class="ic"><img src="assets/list/ic-swap.svg" alt="" width="20" height="20"></span><div><b>Đổi trong 7 ngày làm việc</b><small>Khi sản phẩm chưa lắp đặt, chưa sử dụng</small></div></li>
+      <li><span class="ic"><img src="assets/list/ic-tool.svg" alt="" width="20" height="20"></span><div><b>Thay lõi 2 tháng/lần</b><small>Miễn phí khi thuê máy, do Cody thực hiện</small></div></li>
+      <li><span class="ic"><img src="assets/list/ic-card.svg" alt="" width="20" height="20"></span><div><b>Trả góp 0% lãi suất</b><small>Kỳ hạn linh hoạt 12–36 tháng</small></div></li>
+    </ul>
+  </section>
+
+  <!-- Câu hỏi thường gặp -->
+  <section class="lp-faq wrap" aria-labelledby="faqTitle">
+    <div class="lp-faq__intro reveal">
+      <p class="lp-ov">HỎI ĐÁP</p>
+      <h2 id="faqTitle" class="lp-h2">Mua đứt hay thuê máy?</h2>
+      <p>Những câu hỏi khách hàng hay hỏi nhất trước khi chọn máy lọc nước.</p>
+      <a class="btn btn--ghost" href="tel:1800556892"><img src="assets/list/ic-phone-ink.svg" alt="" width="18" height="18">Gọi 1800 556 892</a>
+    </div>
+    <div class="lp-acc reveal" id="faq">
+      <div class="lp-acc__it">
+        <h3><button type="button" aria-expanded="true" aria-controls="faq1" id="faqb1">Nên mua đứt hay thuê máy lọc nước?<span class="ico" aria-hidden="true"><img class="i-plus" src="assets/list/ic-plus.svg" alt="" width="16" height="16"><img class="i-minus" src="assets/list/ic-minus.svg" alt="" width="16" height="16"></span></button></h3>
+        <div class="lp-acc__p" id="faq1" role="region" aria-labelledby="faqb1"><div><p>Thuê máy: hợp đồng 36 tháng, phí từ 700.000₫/tháng, đã gồm vệ sinh, bảo dưỡng và thay lõi lọc 2 tháng/lần. Mua đứt: sở hữu máy ngay, có thể trả góp 0% lãi suất từ 12 đến 36 tháng.</p></div></div>
+      </div>
+      <div class="lp-acc__it">
+        <h3><button type="button" aria-expanded="false" aria-controls="faq2" id="faqb2">Cần giấy tờ gì để thuê máy?<span class="ico" aria-hidden="true"><img class="i-plus" src="assets/list/ic-plus.svg" alt="" width="16" height="16"><img class="i-minus" src="assets/list/ic-minus.svg" alt="" width="16" height="16"></span></button></h3>
+        <div class="lp-acc__p" id="faq2" role="region" aria-labelledby="faqb2" hidden><div><p>Chuẩn bị giấy tờ tuỳ thân của người đứng tên hợp đồng và địa chỉ lắp đặt. Chuyên viên Coway sẽ hướng dẫn đầy đủ hồ sơ khi tư vấn qua hotline 1800 556 892.</p></div></div>
+      </div>
+      <div class="lp-acc__it">
+        <h3><button type="button" aria-expanded="false" aria-controls="faq3" id="faqb3">Bao lâu cần thay lõi lọc một lần?<span class="ico" aria-hidden="true"><img class="i-plus" src="assets/list/ic-plus.svg" alt="" width="16" height="16"><img class="i-minus" src="assets/list/ic-minus.svg" alt="" width="16" height="16"></span></button></h3>
+        <div class="lp-acc__p" id="faq3" role="region" aria-labelledby="faqb3" hidden><div><p>Cody — nhân viên chăm sóc của Coway — đến kiểm tra, vệ sinh và thay lõi theo chu kỳ 2 tháng/lần. Khi thuê máy, việc thay lõi đã gồm trong phí thuê hằng tháng.</p></div></div>
+      </div>
+      <div class="lp-acc__it">
+        <h3><button type="button" aria-expanded="false" aria-controls="faq4" id="faqb4">Khu vực nào được lắp đặt miễn phí?<span class="ico" aria-hidden="true"><img class="i-plus" src="assets/list/ic-plus.svg" alt="" width="16" height="16"><img class="i-minus" src="assets/list/ic-minus.svg" alt="" width="16" height="16"></span></button></h3>
+        <div class="lp-acc__p" id="faq4" role="region" aria-labelledby="faqb4" hidden><div><p>Coway Vina giao và lắp đặt miễn phí trong khu vực phục vụ. Gọi 1800 556 892 hoặc đăng ký tư vấn để kiểm tra địa chỉ của bạn.</p></div></div>
+      </div>
+      <div class="lp-acc__it">
+        <h3><button type="button" aria-expanded="false" aria-controls="faq5" id="faqb5">Có thể đổi sản phẩm sau khi mua không?<span class="ico" aria-hidden="true"><img class="i-plus" src="assets/list/ic-plus.svg" alt="" width="16" height="16"><img class="i-minus" src="assets/list/ic-minus.svg" alt="" width="16" height="16"></span></button></h3>
+        <div class="lp-acc__p" id="faq5" role="region" aria-labelledby="faqb5" hidden><div><p>Có. Bạn được đổi sản phẩm trong 7 ngày làm việc khi sản phẩm chưa lắp đặt và chưa sử dụng.</p></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Bảng so sánh các máy đã chọn -->
+<dialog class="lp-modal" id="cmpModal" aria-labelledby="cmpModalTitle">
+  <div class="lp-modal__head">
+    <h2 id="cmpModalTitle">So sánh máy đã chọn</h2>
+    <button type="button" class="lp-modal__x" aria-label="Đóng bảng so sánh" data-close-modal><img src="assets/shared/ic-x.svg" alt="" width="16" height="16"></button>
+  </div>
+  <div class="lp-modal__body lp-table-scroll" id="modalTable"></div>
+</dialog>
+
+<footer data-footer></footer>
+<script src="js/shared.js"></script><script src="js/list.js"></script></body></html>
